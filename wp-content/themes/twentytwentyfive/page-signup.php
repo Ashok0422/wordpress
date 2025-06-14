@@ -12,11 +12,18 @@ get_header();
 <div class="signup-container">
     <h2>Create an Account</h2>
     <form method="post">
-        <input type="text" name="username" placeholder="Username" required><br>
-        <input type="email" name="email" placeholder="Email" required><br>
-        <input type="password" name="password" placeholder="Password" required><br>
-        <input type="submit" name="wp_signup" value="Sign Up">
-    </form>
+    <input type="text" name="username" placeholder="Username" required><br>
+    <input type="email" name="email" placeholder="Email" required><br>
+    <input type="password" name="password" placeholder="Password" required><br>
+
+    <!-- New Fields -->
+    <input type="text" name="first_name" placeholder="First Name"><br>
+    <input type="text" name="last_name" placeholder="Last Name"><br>
+    <input type="text" name="phone" placeholder="Phone Number"><br>
+
+    <input type="submit" name="wp_signup" value="Sign Up">
+</form>
+
 
     <?php if (!empty($signup_message)): ?>
         <p style="color:red;"><?php echo esc_html($signup_message); ?></p>

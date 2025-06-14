@@ -9,6 +9,16 @@
  * @since Twenty Twenty-Five 1.0
  */
 
+
+// function create_local_admin_user() {
+//     if (!username_exists('myadmin')) {
+//         $user_id = wp_create_user('myadmin', 'admin123', 'admin@example.com');
+//         $user = new WP_User($user_id);
+//         $user->set_role('administrator');
+//     }
+// }
+// add_action('init', 'create_local_admin_user');
+
 // Adds theme support for post formats.
 if ( ! function_exists( 'twentytwentyfive_post_format_setup' ) ) :
 	/**
